@@ -1,0 +1,11 @@
+{
+  "name": "glutelab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "build": "npm run validate && node scripts/build.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
