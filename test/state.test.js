@@ -80,7 +80,7 @@ test('strict import rejects unknown fields, invalid dates, keys, booleans and ve
   for(const change of [s=>s.version=9,s=>s.week=13,s=>s.sessions['w1-a'].checked[0]='true',s=>s.sessions['w1-a'].checked=[],s=>s.sessions['w1-a'].completedAt='<script>',s=>s.title='injected',s=>s.sessions.bad=s.sessions['w1-a']]) {
     const value=structuredClone(good);change(value); assert.throws(()=>validateState(value));
   }
-  assert.throws(()=>parseImport('x'.repeat(5_000_001)));
+  assert.throws(()=>parseImport(JSON.stringify(good)+' '.repeat(5_000_000)),/5 Mo/);
 });
 test('a stale tab cannot overwrite changes from another tab', () => {
   const disk=memory(),a=createStorage(()=>disk),b=createStorage(()=>disk);a.load();b.load();
