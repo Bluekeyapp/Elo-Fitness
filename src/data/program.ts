@@ -1,6 +1,9 @@
+// Program content ported unchanged from the original GLUTELAB app.
+export interface Exercise { n: string; s: number; r: string; w: string; rest: number; tip: string }
+export interface Session { id: string; day: string; title: string; warm: string; ex: Exercise[] }
+export interface Phase { id: string; name: string; wk: string; color: string; sessions: Session[]; prog: string[] }
 
-/* ─── DATA ─── */
-export const P=[
+export const P: Phase[] = [
 {id:"p1",name:"Activation",wk:"Sem. 1-4",color:"#E8453F",sessions:[
 {id:"a",day:"Lun",title:"Fessiers priorité",warm:"Squats poids du corps, ponts fessiers, ouvertures de hanche élastique 10kg",ex:[
 {n:"Poussée de hanches au sol",s:4,r:"15",w:"Haltère 10kg",rest:60,tip:"Serrer les fessiers 2s en haut. Genoux à 90°."},
@@ -94,14 +97,14 @@ prog:["Poussée hanches → haltères 2×4kg + kettlebell 12kg (ou prévoir 8kg)
 prog:["Poussée hanches → maximum de charge (20kg+ sur le bassin)","Tous les squats → élastique 30kg systématique","Fentes bulgares → haltère 10kg + 4kg (14kg total)","Balancier → kettlebell 16kg si disponible","Ajouter 1-2 répétitions partout","Réduire TOUS les repos de 10-15s","Séance C → 3 exercices enchaînés au lieu de 2","EMOM → passer à 18 ou 20 min"]}
 ];
 
-export const NUTR=[
+export const NUTR: { i: string; t: string; d: string }[] = [
 {i:"🍗",t:"Protéines",d:"100-125g/jour — poulet, œufs, poisson, fromage blanc, poudre protéinée"},
 {i:"💧",t:"Eau",d:"2L minimum — 500ml avant, siroter pendant, 500ml après"},
 {i:"🍠",t:"Glucides",d:"Patate douce, riz, avoine, fruits autour des séances"},
 {i:"😴",t:"Sommeil",d:"7-9h par nuit — les muscles poussent au repos"},
 {i:"🧘",t:"Récup",d:"1 jour d'étirements/yoga + rouleau de massage"}
 ];
-export const SHOP=[
+export const SHOP: { wk: string; item: string }[] = [
 {wk:"Semaine 5",item:"Haltères 6kg ×2 et 8kg ×2"},
 {wk:"Semaine 9",item:"Haltères 12kg ×2 ou kettlebell 16kg"},
 {wk:"Optionnel",item:"Longues bandes de traction"}

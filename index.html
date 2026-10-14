@@ -1,116 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#111111">
-<title>GLUTELAB — Programme 12 semaines</title>
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="./styles.css?v=3">
-</head>
-<body>
-<main class="app" id="app">
-  <div id="storageNotice" class="notice" role="status" aria-live="polite"></div>
-  <div class="backup-controls">
-    <details><summary>Sauvegarde et mises à jour</summary>
-      <p>Les progrès sont enregistrés sur cet appareil. Exportez-les régulièrement.</p>
-      <button onclick="exportProgress()">Exporter la progression JSON</button>
-      <label class="import-label">Importer une sauvegarde JSON<input id="importFile" type="file" accept=".json,application/json"></label>
-      <button onclick="exportRaw()">Exporter les données originales (diagnostic)</button>
-      <button id="updateButton" hidden>Mettre à jour et recharger</button>
-      <p id="updateStatus" role="status"></p>
-    </details>
-  </div>
-  <p id="timerStatus" class="sr-only" role="status" aria-live="polite"></p>
-
-  <!-- BARRE DU MINUTEUR -->
-  <div class="timer-bar" id="timerBar">
-    <div>
-      <div class="tt" id="timerDisplay">0:00</div>
-      <div class="tl">Temps de repos</div>
-    </div>
-    <button class="ts" id="timerCancel" onclick="stopTimer()">Annuler</button>
-  </div>
-
-  <!-- ACCUEIL -->
-  <div class="view active" id="viewHome">
-    <div class="home-hero">
-      <div class="brand-row">
-        <div class="brand">GLUTE<span>LAB</span></div>
-        <div class="week-badge" id="weekBadge"></div>
-      </div>
-      <p class="kicker">Programme de 12 semaines</p>
-      <h1 id="homeFocusTitle">Séance recommandée</h1>
-      <p id="homeFocusSub">Fessiers • Cuisses • Ventre plat</p>
-      <div class="hero-actions">
-        <button class="play-btn" id="heroPlay" onclick="openSuggestedSession()">▶ Continuer</button>
-        <button class="ghost-btn" onclick="showView('prog')">Progrès</button>
-      </div>
-      <div class="stat-row" id="homeStats"></div>
-    </div>
-    <div class="week-strip" id="weekStrip"></div>
-    <div class="row-head">
-      <div>
-        <div class="row-title">Phases</div>
-        <div class="row-sub" id="phaseWeeks"></div>
-      </div>
-    </div>
-    <div class="phase-pills" id="phasePills"></div>
-    <div class="row-head">
-      <div>
-        <div class="row-title">Séances</div>
-        <div class="row-sub" id="sessionWeeks"></div>
-      </div>
-    </div>
-    <div class="sess-grid" id="sessGrid"></div>
-  </div>
-
-  <!-- SÉANCE -->
-  <div class="view" id="viewWorkout">
-    <div class="workout">
-      <div class="wk-head" id="wkHead">
-        <button class="back-btn" onclick="showView('home')">← Retour</button>
-        <h2 id="wkTitle"></h2>
-        <div class="sub" id="wkSub"></div>
-      </div>
-      <div class="warm-box" id="wkWarm"></div>
-      <div id="exList"></div>
-      <button class="finish-btn" id="finishBtn" onclick="finishSession()">Terminer la séance ✓</button>
-    </div>
-  </div>
-
-  <!-- RÉUSSITE -->
-  <div class="view" id="viewDone">
-    <div class="done-screen">
-      <div class="big">🎉</div>
-      <h2>Bravo !</h2>
-      <p>Séance terminée, progression gardée et historique mis à jour.</p>
-      <button onclick="resetAndHome()">Retour à l'accueil</button>
-    </div>
-  </div>
-
-  <!-- PROGRESSIONS -->
-  <div class="view" id="viewProg">
-    <div class="head"><h1>Progrès</h1><p>Résumé simple de ta semaine</p></div>
-    <div class="prog-section" id="progList"></div>
-  </div>
-
-  <!-- CONSEILS -->
-  <div class="view" id="viewInfo">
-    <div class="head"><h1>Conseils</h1><p>Nutrition, récupération et matériel</p></div>
-    <div class="info-section" id="infoContent"></div>
-  </div>
-
-  <!-- BARRE DE NAVIGATION -->
-  <nav class="tab-bar" id="tabBar" aria-label="Navigation principale">
-    <button onclick="showView('home')" data-tab="home">Séances</button>
-    <button onclick="showView('prog')" data-tab="prog">Progrès</button>
-    <button onclick="showView('info')" data-tab="info">Conseils</button>
-  </nav>
-</main>
-
-<script type="module" src="./js/ui.js?v=3"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="Programme sportif de 12 semaines pour fessiers, cuisses et ventre plat." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Eloise Sport" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Eloise Sport — Programme 12 semaines</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

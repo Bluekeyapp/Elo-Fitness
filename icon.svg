@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GLUTELAB">
-  <rect width="512" height="512" rx="96" fill="#050505"/>
-  <path d="M128 344c54 42 202 42 256 0 18-14 20-42 4-59-17-19-45-17-63 0-32 30-106 30-138 0-18-17-46-19-63 0-16 17-14 45 4 59Z" fill="#e50914"/>
-  <path d="M168 184h176c24 0 44 20 44 44v32H124v-32c0-24 20-44 44-44Z" fill="#f5f5f1"/>
-  <path d="M172 224h168" stroke="#050505" stroke-width="28" stroke-linecap="round"/>
-  <text x="256" y="410" fill="#f5f5f1" font-family="Arial, sans-serif" font-size="54" font-weight="900" text-anchor="middle">GL</text>
-</svg>
