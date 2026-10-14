@@ -107,7 +107,7 @@ Phone checklist (iPhone Safari + Android Chrome):
 - [x] Tag the old version in git (rollback point): `glutelab-final`
 - [x] Replace the old code in the repo with this project, update the GitHub Actions workflow
 - [x] Push to `main` → GitHub Pages deploys
-- [ ] Delete the test repo `Bluekeyapp/eloisesport-test`
+- [x] Delete the test repo `Bluekeyapp/eloisesport-test`
 - [ ] Optional: custom domain, privacy-friendly analytics
 
 ## Commands
