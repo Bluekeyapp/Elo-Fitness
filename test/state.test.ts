@@ -119,7 +119,7 @@ test('a stale tab cannot overwrite changes from another tab', () => {
   expect(completedKeys(a.load().state)).toHaveLength(1);
 });
 
-// ── New in Eloise Sport ──
+// ── New in Elo Fitness (formerly Eloise Sport) ──
 
 const v1Record = (key: string, all: boolean) => ({
   checked: catalog[key].ex.map((_, i) => all || i === 0), completedAt: all ? stamp : null, endedAt: null,

@@ -1,4 +1,4 @@
-# Build Eloise Sport (Vite) and deploy it to GitHub Pages.
+# Build Elo Fitness (Vite) and deploy it to GitHub Pages.
 name: Deploy to Pages
 
 on:

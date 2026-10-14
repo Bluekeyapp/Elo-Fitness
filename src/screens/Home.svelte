@@ -24,7 +24,7 @@
   <header class="brand-row">
     <div class="brand">
       <img src="{import.meta.env.BASE_URL}logo-mark-light.png" alt="" width="34" height="32" />
-      <span>Eloise <em>Sport</em></span>
+      <span>Elo <em>Fitness</em></span>
     </div>
     <div class="badge">Semaine {week}</div>
   </header>

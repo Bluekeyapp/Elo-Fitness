@@ -71,7 +71,7 @@
     <div class="card">
       <p><strong>Santé.</strong> Ce programme est fourni à titre informatif. Consulte un médecin avant de commencer, surtout en cas de douleur, blessure, grossesse ou problème de santé. Arrête un exercice s'il provoque une douleur.</p>
       <p><strong>Confidentialité.</strong> Aucune donnée n'est collectée ni envoyée : tout reste sur ton appareil.</p>
-      <p class="version">Eloise Sport • version {__APP_VERSION__}</p>
+      <p class="version">Elo Fitness • version {__APP_VERSION__}</p>
     </div>
   </section>
 </div>

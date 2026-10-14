@@ -1,4 +1,4 @@
-# Eloise Sport: rewrite plan
+# Elo Fitness (formerly Eloise Sport): rewrite plan
 
 Fresh rewrite of the GLUTELAB PWA, renamed **Eloise Sport** (old version: `../../eloisesportapp`).
 Developed **locally** in this folder. Once ready, it replaces the old code in
@@ -10,7 +10,7 @@ Developed **locally** in this folder. Once ready, it replaces the old code in
 |---|---|
 | Platform | Web app (installable PWA), same as today |
 | Approach | Fresh rewrite |
-| Name | Eloise Sport |
+| Name | Elo Fitness (renamed from Eloise Sport on 2026-10-13) |
 | Language | French only |
 | Accounts | None. Data stays on the device (localStorage) |
 | Price | Free |
@@ -54,7 +54,7 @@ side when needed), circuits and supersets done in rounds, screen kept awake.
 
 ### 1. Specs
 - [x] Final feature list for v1
-- [x] Final app name: Eloise Sport
+- [x] Final app name: Elo Fitness (was Eloise Sport)
 - [x] 5 screens: Home, Workout, Session done, Progress, Tips (built directly)
 
 ### 2. Setup

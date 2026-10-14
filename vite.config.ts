@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => {
         injectRegister: false,
         includeAssets: ['favicon-48.png', 'apple-touch-icon.png', 'logo-mark-light.png'],
         manifest: {
-          name: testBuild ? 'Eloise Sport (test)' : 'Eloise Sport',
-          short_name: testBuild ? 'Eloise Test' : 'Eloise Sport',
+          name: testBuild ? 'Elo Fitness (test)' : 'Elo Fitness',
+          short_name: testBuild ? 'Elo Test' : 'Elo Fitness',
           description: 'Programme sportif de 12 semaines pour fessiers, cuisses et ventre plat.',
           lang: 'fr',
           start_url: base,

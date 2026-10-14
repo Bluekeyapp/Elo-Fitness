@@ -211,9 +211,9 @@ class App {
   }
 
   // ── Backup ──
-  exportProgress() { download(this.state, 'eloise-sport-progression.json'); }
+  exportProgress() { download(this.state, 'elo-fitness-progression.json'); }
   exportRaw() {
-    try { download(storage.raw(), 'eloise-sport-donnees-brutes.json'); }
+    try { download(storage.raw(), 'elo-fitness-donnees-brutes.json'); }
     catch { this.notice = 'Lecture des données brutes impossible. Exportez la progression en mémoire.'; }
   }
   async importFile(file: File) {
