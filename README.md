@@ -3,7 +3,7 @@
 Programme de musculation de 12 semaines, en français, sous forme d'appli web installable (PWA).
 Gratuite, sans compte : la progression reste sur l'appareil (export/import possible).
 
-En ligne : https://bluekeyapp.github.io/eloisesportapp/
+En ligne : https://bluekeyapp.github.io/Elo-Fitness/
 
 ## Développement
 

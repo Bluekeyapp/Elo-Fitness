@@ -9,14 +9,14 @@ export default defineConfig({
   retries: 0,
   reporter: [['list']],
   use: {
-    baseURL: 'http://localhost:4173/eloisesportapp/',
+    baseURL: 'http://localhost:4173/Elo-Fitness/',
     ...devices['Pixel 7'],
     locale: 'fr-FR',
     trace: 'retain-on-failure',
   },
   webServer: {
     command: 'npm run build && npx vite preview --port 4173 --strictPort',
-    url: 'http://localhost:4173/eloisesportapp/',
+    url: 'http://localhost:4173/Elo-Fitness/',
     reuseExistingServer: false,
     timeout: 120_000,
   },

@@ -22,6 +22,11 @@ Developed **locally** in this folder. Once ready, it replaces the old code in
 Existing users' progress lives in localStorage under `gl-state-v1` on
 `bluekeyapp.github.io/eloisesportapp/`.
 
+On 2026-10-14 the repo was renamed `Elo-Fitness`, so the app moved to
+`bluekeyapp.github.io/Elo-Fitness/`. localStorage belongs to the whole origin
+(`bluekeyapp.github.io`), so progress follows. The small repo `Bluekeyapp/eloisesportapp`
+now only redirects the old address and retires the old service worker; keep it.
+
 - Deploy the rewrite to the **same repo and URL** so the data stays readable.
 - New data is saved under `es-state-v2`. On first launch the app upgrades from
   `gl-state-v1` (or the older `gl-done`, `gl-sessions`, `gl-history`, `gl-week` keys)
@@ -114,7 +119,7 @@ Phone checklist (iPhone Safari + Android Chrome):
 
 ```sh
 npm install      # once
-npm run dev      # http://localhost:5173/eloisesportapp/
+npm run dev      # http://localhost:5173/Elo-Fitness/
 npm test         # logic tests
 npm run e2e      # end-to-end + accessibility tests (builds the app first)
 npm run icons    # regenerate icons from brand/logo.webp

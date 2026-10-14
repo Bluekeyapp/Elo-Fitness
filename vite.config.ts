@@ -9,7 +9,7 @@ import pkg from './package.json' with { type: 'json' }
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const testBuild = mode === 'staging'
-  const base = testBuild ? '/eloisesport-test/' : '/eloisesportapp/'
+  const base = testBuild ? '/eloisesport-test/' : '/Elo-Fitness/'
   return {
     base,
     define: { __APP_VERSION__: JSON.stringify(pkg.version), __TEST_BUILD__: JSON.stringify(testBuild) },
